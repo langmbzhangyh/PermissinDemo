@@ -29,6 +29,7 @@ public class BaseActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         ActivityCollector.removeActivity(this);
+
     }
 
     public static void requestRuntimePermissions(String[] permissions, PermissionListener listener) {
